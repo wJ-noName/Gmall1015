@@ -1,6 +1,6 @@
-package com.atguigu.gmall.user.bean;
+package com.atguigu.gmall.bean;
 
-public class User {
+public class UserInfo {
 
     private int id;
     private String loginName;
@@ -11,21 +11,6 @@ public class User {
     private String email;
     private String headImg;
     private String userLevel;
-
-    public User() {
-    }
-
-    public User(int id, String loginName, String nickName, String passwd, String name, String phoneNum, String email, String headImg, String userLevel) {
-        this.id = id;
-        this.loginName = loginName;
-        this.nickName = nickName;
-        this.passwd = passwd;
-        this.name = name;
-        this.phoneNum = phoneNum;
-        this.email = email;
-        this.headImg = headImg;
-        this.userLevel = userLevel;
-    }
 
     public int getId() {
         return id;
@@ -97,20 +82,5 @@ public class User {
 
     public void setUserLevel(String userLevel) {
         this.userLevel = userLevel;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", loginName='" + loginName + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", passwd='" + passwd + '\'' +
-                ", name='" + name + '\'' +
-                ", phoneNum='" + phoneNum + '\'' +
-                ", email='" + email + '\'' +
-                ", headImg='" + headImg + '\'' +
-                ", userLevel='" + userLevel + '\'' +
-                '}';
     }
 }
