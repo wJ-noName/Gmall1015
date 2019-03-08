@@ -1,22 +1,39 @@
 package com.atguigu.gmall.bean;
 
-public class UserInfo {
+import javax.persistence.Column;
+import javax.persistence.Id;
+import java.io.Serializable;
 
-    private int id;
-    private String loginName;
-    private String nickName;
-    private String passwd;
-    private String name;
-    private String phoneNum;
-    private String email;
-    private String headImg;
-    private String userLevel;
+/**
+ * @param
+ * @return
+ */
+   public class UserInfo implements Serializable {
+        @Id
+        @Column
+        private String id;
+        @Column
+        private String loginName;
+        @Column
+        private String nickName;
+        @Column
+        private String passwd;
+        @Column
+        private String name;
+        @Column
+        private String phoneNum;
+        @Column
+        private String email;
+        @Column
+        private String headImg;
+        @Column
+        private String userLevel;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

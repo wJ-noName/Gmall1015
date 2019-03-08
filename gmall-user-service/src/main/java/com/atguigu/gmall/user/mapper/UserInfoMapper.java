@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface UserInfoMapper extends Mapper<UserInfo> {
     List<UserInfo> selectAllUser();
+
+    UserInfo selectUserByLogin(String loginName);
 }
